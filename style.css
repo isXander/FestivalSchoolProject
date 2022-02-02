@@ -17,6 +17,10 @@
     background-color: #303030;
 }
 
+#venues-background {
+    background-color: #303030;
+}
+
 header {
     padding: 5px 15px;
     display: flex;
@@ -38,6 +42,7 @@ header {
     width: fit-content;
 
     background-color: #ff4747;
+    border-radius: 5deg;
     padding: 0 5px;
 
     user-select: none;
@@ -224,6 +229,16 @@ header {
     min-width: 250px;
     min-height: 250px;
     background-color: #202020;
+    border-radius: 10deg;
+
+    transition-duration: .3s;
+    transition-property: transform;
+}
+
+.artist-element:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 1;
 }
 
 .artist-name {
@@ -251,6 +266,62 @@ header {
 .artist-description {
     color: #fafafa;
     padding: 0 5px;
+    text-align: center;
+    height: 100%;
+}
+
+#venues {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.venue-element {
+    flex: 1 0 25%;
+    /* flex: 1; */
+    min-width: 250px;
+    min-height: 250px;
+    background-color: #202020;
+    border-radius: 10deg;
+
+    transition-duration: .3s;
+    transition-property: transform;
+}
+
+.venue-element:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.venue-name {
+    background-color: #ff4747;
+    color: #fafafa;
+    padding: 10px 0;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.venue-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.venue-img {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: auto;
+}
+
+.venue-description {
+    color: #fafafa;
+    padding: 0 5px;
+    text-align: center;
+    height: 100%;
 }
 
 .acrylic {

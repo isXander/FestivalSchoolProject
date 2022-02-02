@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xander's Pit</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="resources/logo.png">
+    </head>
+
+    <body id="venues-background">
+        <header>
+            <div class="icon-container">
+                <a href="index.html" id="icon">
+                    <p>
+                        Xander's
+                        <br>
+                        <span>Pit</span>
+                    </p>
+                </a>
+            </div>
+    
+            <div id="navigation">
+                <a class="big-button" href="index.html">Home</a>
+                <a class="big-button" href="tickets.html">Tickets</a>
+                <a class="big-button" href="venues.html">Venues</a>
+                <a class="big-button" href="artists.html">Artists</a>
+            </div>
+        </header>
+
+        <div id="venues">
+            <div class="venue-element" onclick="site('https:\/\/www.arcticmonkeys.com')">
+                <h2 class="venue-name">Arctic Monkeys</h2>
+                <div class="venue-content">
+                    <img class="venue-img" src="resources/arctic-monkeys.jfif"/>
+                    <p class="venue-description">
+                        Arctic Monkeys are an English rock band formed in Sheffield in 2002. 
+                        The group consists of Alex Turner (lead vocals, guitar, keyboards), 
+                        Jamie Cook (guitar, keyboards), Nick O'Malley (bass guitar, backing vocals), 
+                        and Matt Helders (drums, backing vocals).
+                    </p>
+                </div>
+                
+            </div>
+            <div class="venue-element" onclick="site('https:\/\/www.royalbloodband.com')">
+                <h2 class="venue-name">Royal Blood</h2>
+                <div class="venue-content">
+                    <img class="venue-img" src="resources/royal-blood.jpg"/>
+                    <p class="venue-description">
+                        Royal Blood are an English rock duo formed by Mike Kerr (vocals, bass guitar) 
+                        and Ben Thatcher (drums) in Worthing in 2011. Their sound is anchored by Kerr's 
+                        unique bass playing style.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function site(url) {
+                window.location.href = url
+            }
+        </script>
+    </body>
+</html>

@@ -3,6 +3,7 @@
     <head>
         <title>Xander's Pit</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="resources/logo.png">
     </head>
 
     <body id="artists-background">
@@ -26,7 +27,7 @@
         </header>
 
         <div id="artists">
-            <div class="artist-element">
+            <div class="artist-element" onclick="site('https:\/\/www.arcticmonkeys.com')">
                 <h2 class="artist-name">Arctic Monkeys</h2>
                 <div class="artist-content">
                     <img class="artist-img" src="resources/arctic-monkeys.jfif"/>
@@ -39,7 +40,7 @@
                 </div>
                 
             </div>
-            <div class="artist-element">
+            <div class="artist-element" onclick="site('https:\/\/www.royalbloodband.com')">
                 <h2 class="artist-name">Royal Blood</h2>
                 <div class="artist-content">
                     <img class="artist-img" src="resources/royal-blood.jpg"/>
@@ -50,7 +51,7 @@
                     </p>
                 </div>
             </div>
-            <div class="artist-element">
+            <div class="artist-element" onclick="site('https:\/\/www.thefratellis.com')">
                 <h2 class="artist-name">The Fratellis</h2>
                 <div class="artist-content">
                     <img class="artist-img" src="resources/the-fratellis.jfif"/>
@@ -62,26 +63,45 @@
                     </p>
                 </div>
             </div>
-            <div class="artist-element">
+            <div class="artist-element" onclick="site('https:\/\/rollingstones.com')">
                 <h2 class="artist-name">The Rolling Stones</h2>
                 <div class="artist-content">
-                    <img class="artist-img" src="the-rolling-stones.jfif"/>
+                    <img class="artist-img" src="resources/the-rolling-stones.jfif"/>
                     <p class="artist-description">
                         The Rolling Stones are an English rock band formed in London in 1962. 
                         Active for almost six decades, they are one of the most popular and 
-                        enduring bands of the rock era. In the early 1960s, the Rolling Stones pioneered the gritty, 
-                        heavier-driven sound that came to define hard rock.
+                        enduring bands of the rock era.
                     </p>
                 </div>
             </div>
-            <div class="artist-element">
-                <h2 class="artist-name">2-Day Premium</h2>
-                
+            <div class="artist-element" onclick="site('https:\/\/www.thehives.com')">
+                <h2 class="artist-name">The Hives</h2>
+                <div class="artist-content">
+                    <img class="artist-img" src="resources/the-hives.jpg"/>
+                    <p class="artist-description">
+                        The Hives are a Swedish rock band that rose to prominence in the early 2000s during 
+                        the Garage Rock Revival. Their mainstream success came with the release of the album 
+                        Veni Vidi Vicious, containing the single "Hate to Say I Told You So".
+                    </p>
+                </div>
             </div>
-            <div class="artist-element">
-                <h2 class="artist-name">2-Day VIP</h2>
-                
+            <div class="artist-element" onclick="site('https:\/\/franzferdinand.com')">
+                <h2 class="artist-name">Franz Ferdinand</h2>
+                <div class="artist-content">
+                    <img class="artist-img" src="resources/franz-ferdinand.png"/>
+                    <p class="artist-description">
+                        Franz Ferdinand are a Scottish rock band formed in Glasgow in 2002.
+                        The band is one of the more popular post-punk revival bands, garnering multiple UK top 20 hits.
+                        They have been nominated for several Grammy Awards and have received two Brit Awards.
+                    </p>
+                </div>
             </div>
         </div>
+
+        <script>
+            function site(url) {
+                window.location.href = url
+            }
+        </script>
     </body>
 </html>
